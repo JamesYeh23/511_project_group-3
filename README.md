@@ -3,7 +3,6 @@
 ## Progress
 
 ### To-Do:
-- Create a table to show key variable
 - Create a interphase to show dafault value and a place to easy modify parameters
 
 ### Done:
@@ -12,5 +11,8 @@
       before simulation so that all parameter being loaded
     - Auto run [plot_results](./plot_results.m) after simulation so that
       the multichannel figure can be generated
+    - Auto run [compute_indices](./compute_indices.m) after stimulation to 
+      show key variables Cp, MAP, TPR and HR with intersest of equilibrium value,
+      extreme value, avg percent change, std percent change
 
 last updated: 11/16
