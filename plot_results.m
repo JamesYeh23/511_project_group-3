@@ -39,5 +39,5 @@ function plot_results(out)
     grid on;
     
     % Add a super title to the figure
-    sgtitle('System Response Over Time');
+    sgtitle('The Effect of Vasodilator Drug in 25 Hours');
 end
