@@ -58,6 +58,4 @@ function indices_table = compute_indices(out)
     indices_table = table(variables, equilibrium_values, extreme_values, avg_percent_change, std_percent_change, ...
         'VariableNames', {'Variable', 'Equilibrium Value', 'Extreme Value', 'Avg Percent Change', 'Std Percent Change'});
 
-    % Display the table
-    disp(indices_table);
 end
