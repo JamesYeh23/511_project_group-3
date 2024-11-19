@@ -1,43 +1,35 @@
-function plot_results(out)
-    % Close any existing figures
-    close all;
-    
-    % Create a new figure window
-    figure;
-    
-    % Plot Signal 1
-    subplot(4,1,1)
-    plot(out.Cp.time, out.Cp.signals.values);
-    title('Cp');
-    ylabel('Cp(microg/L)');
-    ylim([0 150]);
-    grid on;
-    
-    % Plot Signal 2
-    subplot(4,1,2);
-    plot(out.MAP.time, out.MAP.signals.values);
-    title('MAP');
-    ylabel('MAP(mmHg)');
-    ylim([0 200]);
-    grid on;
-    
-    % Plot Signal 3
-    subplot(4,1,3);
-    plot(out.TPR.time, out.TPR.signals.values);
-    title('TPR');
-    ylabel('TPR(RU)');
-    ylim([0 30]);
-    grid on;
-    
-    % Plot Signal 4
-    subplot(4,1,4);
-    plot(out.HR.time, out.HR.signals.values);
-    title('HR');
-    xlabel('Time (hours)');
-    ylabel('HR(bpm)');
-    ylim([0 300]);
-    grid on;
-    
-    % Add a super title to the figure
-    sgtitle('The Effect of Vasodilator Drug in 25 Hours');
+function plot_results(app, out)
+    % Plot Cp on app.CpAxes
+    plot(app.CpAxes, out.Cp.time, out.Cp.signals.values);
+    title(app.CpAxes, 'Cp');
+    ylabel(app.CpAxes, 'Cp (µg/L)');
+    ylim(app.CpAxes, [0 150]);
+    grid(app.CpAxes, 'on');
+    xlabel(app.CpAxes, '');
+
+    % Plot MAP on app.MAPAxes
+    plot(app.MAPAxes, out.MAP.time, out.MAP.signals.values);
+    title(app.MAPAxes, 'MAP');
+    ylabel(app.MAPAxes, 'MAP (mmHg)');
+    ylim(app.MAPAxes, [0 200]);
+    grid(app.MAPAxes, 'on');
+    xlabel(app.MAPAxes, '');
+
+    % Plot TPR on app.TPRAxes
+    plot(app.TPRAxes, out.TPR.time, out.TPR.signals.values);
+    title(app.TPRAxes, 'TPR');
+    ylabel(app.TPRAxes, 'TPR (RU)');
+    ylim(app.TPRAxes, [0 30]);
+    grid(app.TPRAxes, 'on');
+    xlabel(app.TPRAxes, '');
+
+    % Plot HR on app.HRAxes
+    plot(app.HRAxes, out.HR.time, out.HR.signals.values);
+    title(app.HRAxes, 'HR');
+    xlabel(app.HRAxes, 'Time (hours)');
+    ylabel(app.HRAxes, 'HR (bpm)');
+    ylim(app.HRAxes, [0 300]);
+    grid(app.HRAxes, 'on');
+    xlabel(app.HRAxes, '');
 end
+
