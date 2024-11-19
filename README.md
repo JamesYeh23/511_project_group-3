@@ -27,8 +27,11 @@ see the multuichannel signal and stastics of variables in one place.
 
 ## Update History
 
+11/15:
+- Build the model with 3 subsystem
+
 11/16:
-- The model with 3 subsystem
+
 - Auto run [Project2024_params_Group3](./Project2024_params_Group3.m)
   before simulation so that all parameter being loaded
 - Auto run [plot_results](./plot_results.m) after simulation so that
