@@ -41,14 +41,19 @@ see the multuichannel signal and stastics of variables in one place.
   extreme value, avg percent change, std percent change
 
 11/18:
+
 - Built the interphase that integrate all the features so far
 
-### To-Do:
+11/19:
+
 - Add the "export" function to export signal output as figure and
-  stastics as excel in the output folder
+  stastics as excel in the "results" folder
+
+### To-Do:
+
 - Run the experinment for question 5 and 7 stated in the project assignment
 - Add "list of option" to load the parameters
 - Add a toggle button to switch between closed/open loop system
 
 
-last updated: 11/18
+last updated: 11/19
