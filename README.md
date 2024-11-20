@@ -48,6 +48,7 @@ see the multuichannel signal and stastics of variables in one place.
 
 - Add the "export" function to export signal output as figure and
   stastics as excel in the "results" folder
+- Add the "Default" button to reset all parameters to default
 
 ### To-Do:
 
