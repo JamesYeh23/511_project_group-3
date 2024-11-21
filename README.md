@@ -17,6 +17,9 @@ Four variables are specfically measured as output of the model:
 - Total peripheral resistance
 - Mean arterial pressure
 
+Besides one dose, a drug dose function block enable to relase drug accordingly
+controled by an array
+
 ### Interphase
 A user-friendly interphase being built for user to adjust the parameters and
 see the multuichannel signal and stastics of variables in one place.
@@ -24,6 +27,7 @@ see the multuichannel signal and stastics of variables in one place.
 - Parameter List: Adjust every parameters
 - Multichannel Signal Output: Show the signal of four variables
 - Statics Table: Show the stastics of four variables
+- Switch: Choose mode between default and customizable drug releasing system
 
 ## Update History
 
@@ -50,11 +54,17 @@ see the multuichannel signal and stastics of variables in one place.
   stastics as excel in the "results" folder
 - Add the "Default" button to reset all parameters to default
 
+11/20:
+
+- Add a switch for user to choose defualt or customizable drug releasing system
+- Add function block to implement progammable drug releasing system controled by
+  an array ShotTimes
+
 ### To-Do:
 
-- Run the experinment for question 5 and 7 stated in the project assignment
+- Add a user-defined table in the interphase to control ShotTimes array
 - Add "list of option" to load the parameters
 - Add a toggle button to switch between closed/open loop system
 
 
-last updated: 11/19
+last updated: 11/20
