@@ -28,7 +28,7 @@ function plot_results(app, out)
     title(app.HRAxes, 'HR');
     xlabel(app.HRAxes, 'Time (hours)');
     ylabel(app.HRAxes, 'HR (bpm)');
-    ylim(app.HRAxes, [0 300]);
+    ylim(app.HRAxes, [0 150]);
     grid(app.HRAxes, 'on');
     xlabel(app.HRAxes, '');
 end

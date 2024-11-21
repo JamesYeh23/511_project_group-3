@@ -13,3 +13,6 @@ V_c = 10; % L
 g = 0.25; % hr^-1
 D = 3500; % ug
 m = -0.09; % RU L ug^-1
+
+InfusionMode = 0; 
+
