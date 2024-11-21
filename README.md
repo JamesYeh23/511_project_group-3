@@ -60,9 +60,13 @@ see the multuichannel signal and stastics of variables in one place.
 - Add function block to implement progammable drug releasing system controled by
   an array ShotTimes
 
+11/21:
+
+- [ShotTimes_editor](./ShotTimes_editor.m) can be used to adjust the array of
+  ShotTimes
+
 ### To-Do:
 
-- Add a user-defined table in the interphase to control ShotTimes array
 - Add "list of option" to load the parameters
 - Add a toggle button to switch between closed/open loop system
 
