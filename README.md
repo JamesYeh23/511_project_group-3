@@ -65,10 +65,15 @@ see the multuichannel signal and stastics of variables in one place.
 - [ShotTimes_editor](./ShotTimes_editor.m) can be used to adjust the array of
   ShotTimes
 
+12/3:
+
+- Add a toggle button to switch between closed/open loop system and generate 
+  certain stimulation results
+
 ### To-Do:
 
 - Add "list of option" to load the parameters
-- Add a toggle button to switch between closed/open loop system
+
 
 
 last updated: 11/20

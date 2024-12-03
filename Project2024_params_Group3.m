@@ -14,5 +14,5 @@ g = 0.25; % hr^-1
 D = 3500; % ug
 m = -0.09; % RU L ug^-1
 
-InfusionMode = 0; 
-
+InfusionMode = 1; 
+Feedback = 1;
