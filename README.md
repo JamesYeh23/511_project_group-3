@@ -69,6 +69,9 @@ see the multuichannel signal and stastics of variables in one place.
 
 - Add a toggle button to switch between closed/open loop system and generate 
   certain stimulation results
+- Add two slider to adjust alpha and beta respectively
+- EditField change background color when values changed and return to white after
+  setting back to default
 
 ### To-Do:
 
