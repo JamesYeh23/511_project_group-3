@@ -27,7 +27,9 @@ see the multuichannel signal and stastics of variables in one place.
 - Parameter List: Adjust every parameters
 - Multichannel Signal Output: Show the signal of four variables
 - Statics Table: Show the stastics of four variables
-- Switch: Choose mode between default and customizable drug releasing system
+- Infusion Mode: Choose mode between default and customizable drug releasing system
+- Feedback: Choose if having feedbakc to be closed loop system
+- Sliders: Easily adjust the modifier of TPR and HR baroreflex sensitivity
 
 ## Update History
 
@@ -75,8 +77,8 @@ see the multuichannel signal and stastics of variables in one place.
 
 ### To-Do:
 
-- Add "list of option" to load the parameters
+- Optimization method of ShotTimes
 
 
 
-last updated: 11/20
+last updated: 12/3
