@@ -19,6 +19,13 @@ function indices_table = compute_indices(out)
     TPR_eq = mean(TPR_data(pre_infusion_indices));
     HR_eq = mean(HR_data(pre_infusion_indices));
 
+    % Post-infusion (Equilibrium) value (newly added)
+    Cp_eq_post = mean(Cp_data(simulation_indices));
+    MAP_eq_post = mean(MAP_data(simulation_indices));
+    TPR_eq_post = mean(TPR_data(simulation_indices));
+    HR_eq_post = mean(HR_data(simulation_indices));
+
+
     % Exteme value in stimulation window
     Cp_max = max(Cp_data(simulation_indices));
     MAP_min = min(MAP_data(simulation_indices));
@@ -36,6 +43,7 @@ function indices_table = compute_indices(out)
     MAP_percent_change = ((MAP_data(simulation_indices) - MAP_eq) / MAP_eq) * 100;
     TPR_percent_change = ((TPR_data(simulation_indices) - TPR_eq) / TPR_eq) * 100;
     HR_percent_change = ((HR_data(simulation_indices) - HR_eq) / HR_eq) * 100;
+    
     Cp_avg_percent_change = mean(Cp_percent_change);
     MAP_avg_percent_change = mean(MAP_percent_change);
     TPR_avg_percent_change = mean(TPR_percent_change);
@@ -51,11 +59,12 @@ function indices_table = compute_indices(out)
     variables = {'Cp' ; 'MAP'; 'TPR'; 'HR'};
 
     equilibrium_values = [Cp_eq; MAP_eq; TPR_eq; HR_eq];
+    post_equilibrium_values = [Cp_eq_post; MAP_eq_post; TPR_eq_post; HR_eq_post];
     extreme_values = [Cp_max; MAP_min; TPR_min; HR_max];
     avg_percent_change = [Cp_avg_percent_change; MAP_avg_percent_change; TPR_avg_percent_change; HR_avg_percent_change];
     std_percent_change = [Cp_std_percent; MAP_std_percent; TPR_std_percent; HR_std_percent];
 
-    indices_table = table(variables, equilibrium_values, extreme_values, avg_percent_change, std_percent_change, ...
-        'VariableNames', {'Variable', 'Equilibrium Value', 'Extreme Value', 'Avg Percent Change', 'Std Percent Change'});
+    indices_table = table(variables, equilibrium_values, post_equilibrium_values, extreme_values, avg_percent_change, std_percent_change, ...
+        'VariableNames', {'Variable', 'Eq Before', 'Eq After', 'Extreme Value', 'Avg Percent Change', 'Std Percent Change'});
 
 end
