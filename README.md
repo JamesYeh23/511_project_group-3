@@ -1,5 +1,7 @@
 ## BME 511 2024 Fall Final Project
 
+## Use the [interphase](interphase.mlapp) to do the stimulation and making changes!
+
 ## Feature
 
 ### Model
@@ -25,11 +27,18 @@ A user-friendly interphase being built for user to adjust the parameters and
 see the multuichannel signal and stastics of variables in one place.
 
 - Parameter List: Adjust every parameters
+- Default: Switch back to default parameteres with one click
+- Start: Start the stimulation with the current parameters
+- Export: Export the figure and/or table of the current stimulation resuilt
 - Multichannel Signal Output: Show the signal of four variables
 - Statics Table: Show the stastics of four variables
 - Infusion Mode: Choose mode between default and customizable drug releasing system
+- Edit ShotTimes: Load the initial ShotTimes array stated in [ShotTimes_editor](./ShotTimes_editor.m)
+  run the parentsearch solver to find better ShotTimes array resulting lower mean MAP and std MAP
 - Feedback: Choose if having feedbakc to be closed loop system
 - Sliders: Easily adjust the modifier of TPR and HR baroreflex sensitivity
+- Hypersensitiviy: Switch to hypersensitvity parameteres with one click
+- Default: Switch back to default parameteres with one click
 
 ## Update History
 
@@ -75,10 +84,10 @@ see the multuichannel signal and stastics of variables in one place.
 - EditField change background color when values changed and return to white after
   setting back to default
 
-### To-Do:
+12/8
 
-- Optimization method of ShotTimes
+- Add optimization method of ShotTimes
 
 
 
-last updated: 12/3
+last updated: 12/8
